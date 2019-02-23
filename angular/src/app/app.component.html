@@ -1,0 +1,19 @@
+<div class="users_search_form">
+  <div>
+    <h1>
+      Intergalactic Star Wars Database
+    </h1>
+  </div>
+  <input placeholder="Search the Star Wars universe..." (input)="search($event)" />
+  <div *ngIf="people | async as persons; else loading">
+<p class="text-center">{{persons.length}} Result{{persons.length>1?"'s":""}} found</p>
+    <li *ngFor="let person of persons">
+      <h4 class="name">{{person.name}}</h4>
+      <p class="description">{{generateDescription(person)}}</p>
+    </li>
+
+  </div>
+  <ng-template #loading>
+    <p>Loading ...</p>
+  </ng-template>
+</div>

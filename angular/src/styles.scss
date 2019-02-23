@@ -1,0 +1,14 @@
+/* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
+
+html {
+  font-family: 'Montserrat',
+    sans-serif;
+  background: #F8D353;
+  background: -webkit-linear-gradient(top, #F8D353, #DD4443);
+  background: -moz-linear-gradient(top, #F8D353, #DD4443);
+  background: linear-gradient(to bottom, #F8D353, #DD4443);
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 100%;
+}
